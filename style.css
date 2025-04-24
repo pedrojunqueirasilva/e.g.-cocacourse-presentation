@@ -4,6 +4,16 @@ body {
     padding: 0;
     background-color: #fff;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
@@ -28,13 +38,27 @@ h2 {
 section {
     padding: 30px;
     margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+h2 {
+    color: #CC0033;
+    border-bottom: 2px solid #CC0033;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 li {
-    padding: 5px 0;
+    padding: 8px 0;
+    list-style-type: square;
+    color: #333;
+}
+
+ul {
+    padding-left: 30px;
 }
 
 nav {
@@ -47,10 +71,12 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #eee;
+    text-decoration: none;
 }
 
 nav a.active {
@@ -62,5 +88,37 @@ footer {
     padding: 20px;
     background-color: #CC0033;
     color: white;
-    margin-top: 20px;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    nav {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
 }
