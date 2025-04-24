@@ -35,9 +35,9 @@
                     <li>Respond to the increasing demand for accelerated upskilling and reskilling.</li>
                     <li>Modernize Training & Development (T&D) and Performance Management processes.</li>
                     <li>Make learning more attractive, personalized, and effective.</li>
-                    <li>Reduce training costs and time with the use of AI.</li>
-                    <li>Integrate learning into the workflow, increasing productivity.</li>
-                    <li>Promote a culture of continuous, collaborative, and data-driven learning.</li>
+                <li>Reduce training costs and time with the use of AI.</li>
+                <li>Integrate learning into the workflow, increasing productivity.</li>
+                <li>Promote a culture of continuous, collaborative, and data-driven learning.</li>
                 </ul>
             </p>
         </section>
@@ -58,7 +58,14 @@
 
         <section id="how-it-works">
             <h2>How it Works</h2>
-            <img src="how-it-works.png" alt="How CocaCourse Works" style="max-width: 100%; border-radius: 8px; margin-bottom: 20px;">
+            <p>CocaCourse operates on four main pillars, visualized in the diagram below. To view the diagram, please copy the code below into a Mermaid viewer (e.g., <a href="https://mermaid.live/">https://mermaid.live/</a>):</p>
+            <pre>
+                graph LR
+                    A["Employee Data Collection"] --> B("Intelligent Analysis with AI");
+                    B --> C("Personalized Recommendations");
+                    C --> D("Continuous Monitoring and Improvement");
+                    D --> A;
+            </pre>
             <p>CocaCourse operates on four main pillars:</p>
             <ol>
                 <li><b>Employee Data Collection</b>: Gathering current skills, performance reviews, career goals, and learning preferences through integration with HR systems (e.g., Workday, SuccessFactors) and dynamic forms.</li>
@@ -67,7 +74,6 @@
                 <li><b>Continuous Monitoring and Improvement</b>: Evaluating success and learning indicators; dynamically adjusting content and recommendations based on results; continuously learning from new data with the AI engine.</li>
             </ol>
         </section>
-
 
         <section id="why-it-works">
             <h2>Why it Works</h2>
@@ -101,7 +107,11 @@
         <footer>
             <p>&copy; 2025 Coca-Cola. All rights reserved.</p>
         </footer>
-        <script src="script.js"></script>
     </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({startOnLoad:true});
+    </script>
 </body>
 </html>

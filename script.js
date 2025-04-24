@@ -38,3 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', highlightSection);
 });
+
+async function loadMermaid() {
+  const mermaid = await import('https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs');
+  mermaid.default.initialize({ theme: 'neutral' });
+}
+
+loadMermaid();
